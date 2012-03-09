@@ -11,7 +11,7 @@ Use a resource generator which is similar to a scaffold generator, but doesn't f
 
 password_digest is an important name as it is the default name used with the has_secure_password feature added in Rails 3.1
 
->\> rails g resource user email password_digest
+>\> rails g resource user email password_digest  
 >\> rake db:migrate
 
 ### Add has_secure_password column to the User model
@@ -254,9 +254,9 @@ If the current_user method returns nil, the user is not logged in.
 
 # Final source code
 ## terminal
->\> rails g resource user email password_digest
->\> rake db:migrate
->\> rails g controller sessions new
+>\> rails g resource user email password_digest  
+>\> rake db:migrate  
+>\> rails g controller sessions new  
 
 ## Gemfile
     gem 'bcrypt-ruby', '~> 3.0.0'
