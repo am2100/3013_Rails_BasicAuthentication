@@ -8,7 +8,9 @@ Beyond the fact that this works for my Windows XP system, I can offer you no gua
 ## Add a Signup form for creating a new user record
 ### Create a User Model / Controller to handle the signup process
 Use a resource generator which is similar to a scaffold generator, but doesn't fill in all the controller actions.
+
 password_digest is an important name as it is the default name used with the has_secure_password feature added in Rails 3.1
+
 >\> rails g resource user email password_digest
 >\> rake db:migrate
 
